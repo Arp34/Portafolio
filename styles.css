@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+}
+
+header {
+    background-color: #111;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    color: #aaa;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 10px;
+    transition:0.3s;
+}
+
+section {
+    margin: 25px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #111;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #0a0a0a;
+    color: white;
+}
+button {
+    background-color: #222;
+    color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.3s;
+}
+button:hover {
+    background-color: #333;
+}
+.foto {
+    width: 150%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 2px solid #333;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.habilidad {
+    display: flex;
+    flex-direction: column;                                                                                                                                                         
+    align-items: center;
+}
+
+
+.habilidad img{
+    width: auto;
+    height: 60px;
+    transition:0.3s;
+}
+
+.habilidad img:hover {
+    transform: scale(1.1);
+}   
+
+.habilidad p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.7);
+
+}
+
+.mascotas p {
+    margin-top: 5px;
+    font-size: 1.4em;
+    text-align: center;
+}
