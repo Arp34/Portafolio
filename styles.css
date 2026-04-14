@@ -119,3 +119,40 @@ button:hover {
     font-size: 1.4em;
     text-align: center;
 }
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.proyecto {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    border: 1px solid #222;
+    text-align: center;
+}
+
+.proyecto h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.proyecto p {
+    color: #ccc;
+    margin: 15px 0;
+}
+.proyecto a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.proyecto a:hover {
+    color: #80c1ff;
+text-decoration: underline;
+}
