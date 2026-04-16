@@ -17,7 +17,7 @@
                     <nav>
                         <a href="#">Inicio</a>
                         <a href="mascotas.html">Mascotas</a>
-                        <a href="#">Contacto</a>
+                        <a href="#formulario">Contacto</a>
                     </nav>
                 </div>
             </div>
@@ -65,36 +65,30 @@
 
     <section>
         <h2>Proyectos</h2>
-        <div class="proyectos">
-            <article class="proyectos">
+        <div class="proyectos"> 
                 <article class="proyecto">
-                    <h3>Sistema de inventario en Python</h3>
-                    <p>Aplicacion básica para gestionar productos, permitiendo registrar, consultar y organizar información.</p>
+                <h3>Sistema de inventario en Python</h3>
+                <p>Aplicacion básica para gestionar productos, permitiendo registrar, consultar y organizar información.</p>
+                <a target="_blank" href="https://github.com/Arp34/Proyecto-Inventario">Ver en GitHub</a>
+            </article>
 
-            <a target="_blank" href="https://github.com/Arp34/Proyecto-Inventario">Ver en GitHub</a>
-                </article>
-
-                <article class="proyecto">
-                    <h3>Portafolio web</h3>
-            <p>Página web desarrollada con HTML y CSS que presenta mi perfil, habilidades y proyectos.</p>
-            
-            <a target="_blank" href="https://github.com/Arp34/Portafolio">Portafolio</a>
-                </article>
+            <article class="proyecto">
+                <h3>Portafolio web</h3>
+                <p>Página web desarrollada con HTML y CSS que presenta mi perfil, habilidades y proyectos.</p>
+                <a target="_blank" href="https://github.com/Arp34/Portafolio">Portafolio</a>
+            </article>
         </div>
     </section>
     
     <section>
-        <h2>Contacto</h2>
-        <p>Email: axelpolo3477@gmail.com</p>
-        
-        <form class="formulario">
-
+        <h2>Contacto</h2>        
+        <form class="formulario" id="formulario">
+            <a href="mailto:axelpolo3477@gmail.com">Email: axelpolo3477@gmail.com</a>
             <div class="fila">
                 <input type="text" placeholder="Nombre">
                 <input type="email" placeholder="Correo electrónico">
             </div>
-
-            <textarea placeholder="Mensaje"></textarea>
+            <textarea placeholder=""></textarea>
             <button>Enviar</button>
         </form>
 </body>
