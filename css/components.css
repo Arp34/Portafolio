@@ -1,0 +1,62 @@
+/* Estilos base de inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+/* El contenedor del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.formulario input {
+   width: 250px;
+   height: 35px;
+   padding: 8px;
+   text-align: center;
+}
+
+.formulario textarea {
+    width: 380px;
+    height: 100px;
+}
+
+.fila {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.fila input {
+    width: 180px;
+}
+
+/* Botones y sus estados */
+button {
+    background-color: #222;
+    color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.formulario button {
+    width: 150px;
+    margin-top: 10px;
+}

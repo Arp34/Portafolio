@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
     <title>Portafolio Axel Ruiz Polo</title>
 </head>
 <body>  
-    <header>
+    <header> <!-- uso de flexbox para organizar la navegacion y la foto de perfil en un solo eje -->
         <div class="container-header">
+            <nav> <!-- botones de navegación -->
+                <a href="#sobre-mi">Inicio</a>
+                <a href="mascotas.html">Mascotas</a>
+                <a href="#formulario">Contacto</a>
+            </nav>
+
             <div class="info-header">
                 <img src="img/OK.jpeg" alt="Foto">
                 <div>
                     <h1>Axel Ruiz Polo</h1>
                     <p>Auxiliar administrativo | Aprendiz de desarrollo web y programación</p>
-                    <nav>
-                        <a href="#">Inicio</a>
-                        <a href="mascotas.html">Mascotas</a>
-                        <a href="#formulario">Contacto</a>
-                    </nav>
                 </div>
             </div>
         </div>
     </header>
 
     <section>
+        <!-- uso de etiquetas semanticas de HTML5 para definir la estructura loica de la biografia personal -->
         <h2>Sobre mí</h2>                                                                                                                                                                                           
         <p>Soy Axel Ruiz Polo, auxiliar administrativo graduado con interés en el área tecnológica, especialmete en la programación.
             actualmente me encuentro en proceso de aprendizaje en tecnologías como HTML, CSS y Python, desarrollando proyectos práctivos que fortalecen mis habilidades.
@@ -33,6 +38,7 @@
     </section>
 
     <section>
+        <!-- contenedor flexible con flexbox para alinear los iconos de las tecnologias de forma horizontal y con espacios uniformes -->
         <h2>Habilidades técnicas</h2>
 
         <div class="habilidades">
@@ -42,15 +48,17 @@
                 <p>HTML</p>
             </div>
         
-        <div class="habilidad">
-            <img src="img/Css.png" alt="CSS">
-            <p>CSS</p>                                                                                                                                                                                                                                                                                                                      
-        </div>
+            <div class="habilidad">
+                <img src="img/Css.png" alt="CSS">
+                <p>CSS</p>                                                                                                                                                                                                                                                                                                                      
+            </div>
         
-        <div class="habilidad">
-            <img src="img/Python.png" alt="Python">
-            <p>Python</p>
-        </div>
+            <div class="habilidad"> <img src="img/Python.png" alt="Python">
+                <p>Python</p>
+            </div>
+
+        </div> 
+    </section>
 
     </section>
     <section>
@@ -64,6 +72,7 @@
     </section>
 
     <section>
+        <!-- aplicacion de css grid layour para crear una cuadricula bidimensional de dos columnas, organizando el espacio visual de la galeria -->
         <h2>Proyectos</h2>
         <div class="proyectos"> 
                 <article class="proyecto">
