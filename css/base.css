@@ -1,13 +1,25 @@
+:root {
+    /* colores */
+    --fondo-oscuro: #0a0a0a;
+    --fondo-tarjeta: #111111;
+    --color-texto: #ffffff;
+    --borde: #222222;
+
+    /*Tipografia*/
+    --fuente-principal: 'Segoe UI', Arial, sans-serif;
+
+}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: #0a0a0a;
+    background-color: var(--fondo-oscuro);
     color: #e5e5e5;
 }
 
 h1, h2, h3 {
     text-align: center;
-    color: #ffffff;
+    color: var(--color-texto);
 }
 
 h2 {

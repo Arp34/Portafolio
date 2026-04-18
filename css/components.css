@@ -5,8 +5,8 @@ input, textarea {
     margin: 8px 0;
     border-radius: 5px;
     border: 1px solid #333;
-    background-color: #0a0a0a;
-    color: white;
+    background-color: var(--fondo-oscuro);
+    color: var(--color-texto);
 }
 
 /* El contenedor del formulario */
@@ -43,7 +43,7 @@ input, textarea {
 
 /* Botones y sus estados */
 button {
-    background-color: #222;
+    background-color: var(--borde);
     color: white;
     border: 1px solid #333;
     padding: 10px;

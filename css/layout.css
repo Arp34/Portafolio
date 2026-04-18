@@ -4,14 +4,33 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 40px 0 20px 0;
-    border-bottom: 1px solid #222;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid var(--borde);
     margin-bottom: 20px;
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+
+}
+
+header a{
+    width: 120px;
+    text-align: center;
+    display: block;
+}
+
 .container-header {
+    width: 100%;
     max-width: 900px;
     padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info-header {
@@ -25,8 +44,8 @@ header {
 .info-header img {
     width: 130px;
     height: 130px;
-    border-radius: 50%;
-    border: 3px solid #222;
+    border-radius: 60%;
+    border: 3px solid var(--borde);
     margin-bottom: 10px;
     object-fit: cover;
 }
@@ -45,6 +64,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 30px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -56,14 +76,28 @@ nav a {
 }
 
 nav a:hover {
-    color: #fff;
+    color: var(--color-texto);
 }
 
 section {
     max-width: 900px;
     margin: 30px auto;
     padding: 40px;
-    background-color: #111;
+    background-color: var(--fondo-tarjeta);
     border-radius: 12px; 
-    border: 1px solid #222;
+    border: 1px solid var(--borde);
+    justify-content: center;
+    
+}
+
+@media (max-width: 768px){
+    section {
+        max-width: 600px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
 }
