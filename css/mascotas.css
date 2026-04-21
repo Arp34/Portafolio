@@ -1,0 +1,40 @@
+/* Sección Mascotas (mascotas.html) */
+.mascotas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.mascota {
+    max-width: 500px;
+    overflow: hidden;
+    background-color: var(--fondo-oscuro);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.mascota:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.mascota img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contenedor-seccion {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: var(--fondo-tarjeta);
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+}
