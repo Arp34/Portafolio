@@ -4,9 +4,9 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid var(--borde);
-    margin-bottom: 20px;
+    padding: 1.3rem 0 1.3rem 0;
+    border-bottom: 0.1rem solid var(--borde);
+    margin-bottom: 1.3rem;
 }
 
 header nav {
@@ -18,14 +18,14 @@ header nav {
 }
 
 header a{
-    width: 120px;
+    width: 8rem;
     text-align: center;
     display: block;
 }
 
 .container-header {
     width: 100%;
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -37,12 +37,12 @@ header a{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.3rem;
 }
 
 .info-header img {
-    width: 130px;
-    height: 130px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 60%;
     border: 3px solid var(--borde);
     margin-bottom: 10px;
@@ -62,15 +62,15 @@ header p {
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1.9rem;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
 }
 
 nav a {
     font-size: 0.9em;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     color: #888;
 }
 
@@ -79,12 +79,12 @@ nav a:hover {
 }
 
 section {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 40px;
+    max-width: 56.25rem;
+    margin: 1.9rem auto;
+    padding: 2.4rem;
     background-color: var(--fondo-tarjeta);
-    border-radius: 12px; 
-    border: 1px solid var(--borde);
+    border-radius: 0.8rem; 
+    border: 0.1rem solid var(--borde);
     justify-content: center;
     
 }
@@ -100,4 +100,5 @@ section {
     .container-header {
         padding: 0px;
     }
+
 }
