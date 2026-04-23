@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/js.css">
     <title>Portafolio Axel Ruiz Polo</title>
 </head>
 <body>  
@@ -32,9 +33,11 @@
         <!-- uso de etiquetas semanticas de HTML5 para definir la estructura loica de la biografia personal -->
         <h2>Sobre mí</h2>                                                                                                                                                                                           
         <p>Soy Axel Ruiz Polo, auxiliar administrativo graduado con interés en el área tecnológica, especialmete en la programación.
-            actualmente me encuentro en proceso de aprendizaje en tecnologías como HTML, CSS y Python, desarrollando proyectos práctivos que fortalecen mis habilidades.
+            <span id="extra" class="oculto">actualmente me encuentro en proceso de aprendizaje en tecnologías como HTML, CSS y Python, desarrollando proyectos práctivos que fortalecen mis habilidades.
             Mi objetivo es seguir creciendo profesionalmente y adquirir experiencia en el desarrollo de soluciones digital.
+            </span>
         </p>
+        <button id="btnMas">Mostrar más</button>
     </section>
 
     <section>
@@ -78,30 +81,45 @@
             <li class="proyecto">
                 <h3>Sistema de inventario en Python</h3>
                 <p>Aplicacion básica para gestionar productos, permitiendo registrar, consultar y organizar información.</p>
+                <button class="btntoggle">Ver detalles</button>
+                <div id="detalles" class="oculto">
+
+                </div>
                 <a target="_blank" href="https://github.com/Arp34/Proyecto-Inventario">Ver en GitHub</a>
             </li>
 
             <li class="proyecto">
                 <h3>Portafolio web</h3>
                 <p>Página web desarrollada con HTML y CSS que presenta mi perfil, habilidades y proyectos.</p>
+                <button class="btntoggle">Ver detalles</button>
+                <div id="detalles" class="oculto">
+                    
+                </div>
                 <a target="_blank" href="https://github.com/Arp34/Portafolio">Portafolio</a>
             </li>
         </ul>
     </section>
-    
-</body>
-<footer>
+    <footer>
         <section>
-        <h2>Contacto</h2>        
-        <form class="formulario" id="formulario">
-            <a href="mailto:axelpolo3477@gmail.com">Email: axelpolo3477@gmail.com</a>
-            <div class="fila">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo electrónico">
-            </div>
-            <textarea placeholder=""></textarea>
-            <button>Enviar</button>
-        </form>
-    <link rel="stylesheet" href="script.js">
-</footer>
+            <h2>Contacto</h2>        
+            <form class="formulario" id="formulario">
+                <a href="mailto:axelpolo3477@gmail.com">Email: axelpolo3477@gmail.com</a>
+                <div class="fila">
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo electrónico">
+                </div>
+                <textarea placeholder=""></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </footer>
+
+        <!-- NOTIFICACIÓN -->
+    <div id="notificacion" class="notificacion">
+    Bienvenido a mi portafolio
+    </div>
+    
+    <script src="js/script.js"></script>
+
+</body>
 </html>
