@@ -45,7 +45,14 @@
     transition: 0.2s ease;
 }
 
-.btnToggle:hover {
+.btntoggle:hover {
     color: #0056b3;
     text-decoration: none;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
 }

@@ -24,35 +24,74 @@ header a{
 }
 
 .container-header {
-    width: 100%;
     max-width: 56.25rem;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 90%;
+}
+
+/* BARRA DE NAVEGACIÓN FIJA */
+.header-principal {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(10, 10, 10, 0.95); /* Casi opaco para legibilidad */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--borde);
+    padding: 1rem 0;
 }
 
 .info-header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top: 1.3rem;
+    justify-content: center;
+    gap: 3rem; /* Más espacio entre foto y nombre */
+    padding: 2rem;
 }
 
-.info-header img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 60%;
-    border: 3px solid var(--borde);
-    margin-bottom: 10px;
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.foto-perfil {
+    width: 10rem; /* Un poco más grande para que destaque */
+    height: 10rem;
+    border-radius: 50%;
+    border: 4px solid var(--borde);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Sombra para profundidad */
     object-fit: cover;
 }
 
-.info-header p {
-    margin-top: 0;
+.texto-perfil h1 {
+    font-size: 2.5rem; /* Nombre más imponente */
+    margin: 0;
+    text-align: left;
+}
+
+.texto-perfil p {
+    font-size: 1.2rem;
     color: #aaa;
-    font-size: 1.1em;
+    margin: 0;
+    text-align: left;
+}
+
+.seccion-perfil {
+    max-width: 56.25rem;
+    margin: 2rem auto;
+    background: none; /* Quitamos el fondo de tarjeta para que se vea integrado */
+    border: none;     /* Sin bordes para un look más limpio */
+    padding: 0;       /* Sin padding extra */
+}
+
+.texto-perfil {
+    text-align: left;
+}
+
+.texto-perfil h1, .texto-perfil p {
+    text-align: left; /* Sobrescribe el centrado general que tenías en base.css */
+    margin: 0;
 }
 
 header p {
@@ -79,7 +118,7 @@ nav a:hover {
 }
 
 section {
-    max-width: 56.25rem;
+    max-width: 56.25rem; 
     margin: 1.9rem auto;
     padding: 2.4rem;
     background-color: var(--fondo-tarjeta);
@@ -89,16 +128,65 @@ section {
     
 }
 
-@media (max-width: 768px){
-    section {
-        max-width: 600px;
+@media (max-width: 768px) {
+    .info-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
     }
-
+    .texto-perfil h1, .texto-perfil p {
+        text-align: center;
+    }
 }
 
+/* =========================================
+   RESPONSIVE - CELULARES (425px)
+   ========================================= */
 @media (max-width: 425px) {
-    .container-header {
-        padding: 0px;
+    /* 1. Barra de navegación: Links más pequeños y con scroll lateral si es necesario */
+    .nav-links {
+        gap: 1rem; /* Reducimos el espacio entre links */
+        padding: 0.5rem;
+        flex-wrap: wrap; /* Si no caben, bajan a la siguiente línea */
+        justify-content: center;
     }
 
+    .nav-links a {
+        font-size: 0.8rem; /* Letra un poco más pequeña */
+        letter-spacing: 0.05rem;
+    }
+
+    /* 2. Bloque de Perfil: Todo al centro y hacia abajo */
+    .info-header {
+        flex-direction: column; /* Foto arriba, texto abajo */
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .foto-perfil {
+        width: 7rem; /* Reducimos el tamaño de la foto */
+        height: 7rem;
+    }
+
+    .texto-perfil {
+        text-align: center; /* Centramos el nombre y cargo */
+    }
+
+    .texto-perfil h1 {
+        text-align: center;
+        font-size: 1.8rem; /* Tamaño de letra más cómodo para móvil */
+    }
+
+    .texto-perfil p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* 3. Ajuste de las secciones generales */
+    section {
+        padding: 1.5rem; /* Menos espacio interno para ganar ancho de lectura */
+        margin: 1rem auto;
+        width: 95%; /* Que ocupe casi toda la pantalla */
+    }
 }

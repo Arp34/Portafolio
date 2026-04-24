@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: var(--fuente-principal);
     margin: 0;
     background-color: var(--fondo-oscuro);
     color: #e5e5e5;

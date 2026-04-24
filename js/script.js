@@ -24,12 +24,41 @@ btnMas.addEventListener("click", () => {
     }
 });
 
-// MOSTRAR / OCULTAR
-const botones = document.querySelectorAll(".btnToggle");
+// CONFIGURACIÓN DEL MODAL
+const modal = document.getElementById("modalProyecto");
+const cerrarBtn = document.getElementById("cerrarModal");
+const modalTitulo = document.getElementById("modalTitulo");
+const modalCuerpo = document.getElementById("modalCuerpo");
 
-botones.forEach((boton) => {
+// Seleccionamos todos los botones de "Ver detalles"
+const botonesDetalles = document.querySelectorAll(".btntoggle");
+
+botonesDetalles.forEach((boton) => {
     boton.addEventListener("click", () => {
-        const detalles = boton.nextElementSibling;
-        detalles.classList.toggle("oculto");
+        // 1. Buscamos el contenedor del proyecto más cercano
+        const proyectoContenedor = boton.closest(".proyecto");
+        
+        // 2. Extraemos la información
+        const titulo = proyectoContenedor.querySelector("h3").textContent;
+        const detallesHTML = proyectoContenedor.querySelector(".oculto").innerHTML;
+
+        // 3. Metemos la información dentro del modal
+        modalTitulo.textContent = titulo;
+        modalCuerpo.innerHTML = detallesHTML;
+
+        // 4. ¡Abrimos el modal! (Función nativa de <dialog>)
+        modal.showModal();
     });
+});
+
+// Evento para cerrar el modal con la X
+cerrarBtn.addEventListener("click", () => {
+    modal.close();
+});
+
+// Cerrar el modal si el usuario hace clic fuera del papelito (en el fondo difuminado)
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.close();
+    }
 });

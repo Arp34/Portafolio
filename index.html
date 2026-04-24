@@ -8,26 +8,28 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/js.css">
+    <link rel="stylesheet" href="css/modals.css">
     <title>Portafolio Axel Ruiz Polo</title>
 </head>
 <body>  
-    <header> <!-- uso de flexbox para organizar la navegacion y la foto de perfil en un solo eje -->
-        <div class="container-header">
-            <nav> <!-- botones de navegación -->
-                <a href="#sobre-mi">Inicio</a>
-                <a href="mascotas.html">Mascotas</a>
-                <a href="#formulario">Contacto</a>
-            </nav>
+    <header class="header-principal">
+        <nav class="nav-links">
+            <a href="#sobre-mi">Inicio</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="mascotas.html">Mascotas</a>
+            <a href="#formulario">Contacto</a>
+        </nav>
+    </header>
 
-            <div class="info-header">
-                <img src="img/OK.jpeg" alt="Foto">
-                <div>
-                    <h1>Axel Ruiz Polo</h1>
-                    <p>Auxiliar administrativo | Aprendiz de desarrollo web y programación</p>
-                </div>
+    <section class="seccion-perfil">
+        <div class="info-header"> <img src="img/OK.jpeg" alt="Foto" class="foto-perfil">
+            <div class="texto-perfil">
+                <h1>Axel Ruiz Polo</h1>
+                <p>Auxiliar administrativo | Aprendiz de desarrollo web y programación</p>
             </div>
         </div>
-    </header>
+    </section>
 
     <section class="sobre-mi">
         <!-- uso de etiquetas semanticas de HTML5 para definir la estructura loica de la biografia personal -->
@@ -81,21 +83,73 @@
             <li class="proyecto">
                 <h3>Sistema de inventario en Python</h3>
                 <p>Aplicacion básica para gestionar productos, permitiendo registrar, consultar y organizar información.</p>
-                <button class="btntoggle">Ver detalles</button>
-                <div id="detalles" class="oculto">
 
+                <div class="acciones">
+                    <a target="_blank" href="https://github.com/Arp34/Proyecto-Inventario">Ver en GitHub</a>
+                </div>  
+
+                <button class="btntoggle">Ver detalles</button>                
+                <div class="oculto">
+                    <div class="detalles-contenido">
+                        <p>
+                            Aplicación desarrollada en Python para gestionar productos de forma sencilla, 
+                            permitiendo registrar, consultar y organizar información.
+                        </p>
+
+                        <p><strong>Tecnologías:</strong><br>
+                            Python · Consola (interfaz de texto)
+                        </p>
+
+                        <p><strong>Funciones principales:</strong><br>
+                            • Registro de productos<br>
+                            • Consulta de información<br>
+                            • Organización de datos
+                        </p>
+
+                        <p><strong>Aprendizajes:</strong><br>
+                            • Uso de listas y diccionarios<br>
+                            • Validación de datos<br>
+                            • Estructuración de programas
+                        </p>
+                    </div>
                 </div>
-                <a target="_blank" href="https://github.com/Arp34/Proyecto-Inventario">Ver en GitHub</a>
+                
             </li>
 
             <li class="proyecto">
                 <h3>Portafolio web</h3>
                 <p>Página web desarrollada con HTML y CSS que presenta mi perfil, habilidades y proyectos.</p>
-                <button class="btntoggle">Ver detalles</button>
-                <div id="detalles" class="oculto">
-                    
+
+                <div class="acciones">
+                    <a target="_blank" href="https://github.com/Arp34/Arp34.github.io">Ver en GitHub</a>                
                 </div>
-                <a target="_blank" href="https://github.com/Arp34/Portafolio">Portafolio</a>
+
+                <button class="btntoggle">Ver detalles</button>
+                <div class="oculto">
+                    <div class="detalles-contenido">
+                        <p>
+                            Página web personal donde presento mi perfil, habilidades y proyectos,
+                            desarrollada con HTML, CSS y JavaScript.
+                        </p>
+
+                        <p><strong>Tecnologías:</strong><br>
+                            HTML5 · CSS3 · JavaScript
+                        </p>
+
+                        <p><strong>Características:</strong><br>
+                            • Diseño responsivo (media queries)<br>
+                            • Organización modular de CSS<br>
+                            • Interactividad con JavaScript
+                        </p>
+
+                        <p><strong>Aprendizajes:</strong><br>
+                            • Estructura semántica web<br>
+                            • Diseño adaptable a dispositivos<br>
+                            • Manipulación del DOM
+                        </p>
+                    </div>
+                </div>
+
             </li>
         </ul>
     </section>
@@ -118,8 +172,13 @@
     <div id="notificacion" class="notificacion">
     Bienvenido a mi portafolio
     </div>
-    
-    <script src="js/script.js"></script>
+    <dialog id="modalProyecto" class="modal">
+        <button id="cerrarModal" class="btn-cerrar">&times;</button>
+        <h3 id="modalTitulo"></h3>
+        <div id="modalCuerpo"></div>
+    </dialog>
+
+        <script src="js/script.js"></script>
 
 </body>
 </html>
