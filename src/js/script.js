@@ -62,3 +62,26 @@ modal.addEventListener("click", (e) => {
         modal.close();
     }
 });
+
+// MENÚ HAMBURGUESA //
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('activo');
+    
+    // Opcional: Cambiar el icono de ☰ a ✕
+    if (navLinks.classList.contains('activo')) {
+        menuToggle.innerHTML = '<span class="barras">✕</span>';
+    } else {
+        menuToggle.innerHTML = '<span class="barras">☰</span>';
+    }
+});
+
+// Cerrar el menú automáticamente al hacer click en un link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('activo');
+        menuToggle.innerHTML = '<span class="barras">☰</span>';
+    });
+});

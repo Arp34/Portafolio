@@ -15,6 +15,7 @@ body {
     margin: 0;
     background-color: var(--fondo-oscuro);
     color: #e5e5e5;
+    padding: 0;
 }
 
 h1, h2, h3 {

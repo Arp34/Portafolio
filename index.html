@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages.css">
-    <link rel="stylesheet" href="css/js.css">
-    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/pages.css">
+    <link rel="stylesheet" href="src/css/js.css">
+    <link rel="stylesheet" href="src/css/modals.css">
     <title>Portafolio Axel Ruiz Polo</title>
 </head>
 <body>  
     <header class="header-principal">
-        <nav class="nav-links">
-            <a href="#sobre-mi">Inicio</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="mascotas.html">Mascotas</a>
-            <a href="#formulario">Contacto</a>
-        </nav>
+        <div class="container-header">
+            <span class="logo-movil insignia-arp">A R P</span>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="barras">☰</span>
+            </button>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="src/views/mascotas.html">Mascotas</a>
+                <a href="#formulario">Contacto</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="seccion-perfil">
-        <div class="info-header"> <img src="img/OK.jpeg" alt="Foto" class="foto-perfil">
+    <section class="seccion-perfil" id="inicio">
+        <div class="info-header"> <img src="public/img/OK.jpeg" alt="Foto" class="foto-perfil">
             <div class="texto-perfil">
                 <h1>Axel Ruiz Polo</h1>
                 <p>Auxiliar administrativo | Aprendiz de desarrollo web y programación</p>
@@ -31,7 +38,7 @@
         </div>
     </section>
 
-    <section class="sobre-mi">
+    <section class="sobre-mi" id="sobre-mi">
         <!-- uso de etiquetas semanticas de HTML5 para definir la estructura loica de la biografia personal -->
         <h2>Sobre mí</h2>                                                                                                                                                                                           
         <p>Soy Axel Ruiz Polo, auxiliar administrativo graduado con interés en el área tecnológica, especialmete en la programación.
@@ -42,23 +49,23 @@
         <button id="btnMas">Mostrar más</button>
     </section>
 
-    <section>
+    <section class="habilidades-técnicas" id="habilidades">
         <!-- contenedor flexible con flexbox para alinear los iconos de las tecnologias de forma horizontal y con espacios uniformes -->
         <h2>Habilidades técnicas</h2>
 
         <div class="habilidades">
 
             <div class="habilidad">
-                <img src="img/Html.png" alt="HTML">
+                <img src="public/img/Html.png" alt="HTML">
                 <p>HTML</p>
             </div>
         
             <div class="habilidad">
-                <img src="img/Css.png" alt="CSS">
+                <img src="public/img/Css.png" alt="CSS">
                 <p>CSS</p>                                                                                                                                                                                                                                                                                                                      
             </div>
         
-            <div class="habilidad"> <img src="img/python.png" alt="Python">
+            <div class="habilidad"> <img src="public/img/python.png" alt="Python">
                 <p>Python</p>
             </div>
 
@@ -79,7 +86,7 @@
     <section >
         <!-- aplicacion de css grid layour para crear una cuadricula bidimensional de dos columnas, organizando el espacio visual de la galeria -->
         <h2>Proyectos</h2>
-        <ul class="proyectos"> 
+        <ul class="proyectos" id="proyectos"> 
             <li class="proyecto">
                 <h3>Sistema de inventario en Python</h3>
                 <p>Aplicacion básica para gestionar productos, permitiendo registrar, consultar y organizar información.</p>
@@ -178,7 +185,7 @@
         <div id="modalCuerpo"></div>
     </dialog>
 
-        <script src="js/script.js"></script>
+        <script src="src/js/script.js"></script>
 
 </body>
 </html>

@@ -99,3 +99,29 @@
 .detalles-contenido p {
     margin-bottom: 10px;
 }
+
+@media (max-width: 425px) {
+    .modal {
+        padding: 0.6rem;
+    }
+
+    #modalCuerpo {
+        padding: 0 0.5rem;
+    }
+
+    .btn-cerrar {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.2rem;
+        top: 0.2rem;
+    }
+
+    .detalles-contenido {
+        font-size: 0.9rem;
+    }
+
+    #modalTitulo {
+        font-size: 1.6rem;
+    }
+
+}

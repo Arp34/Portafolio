@@ -49,5 +49,9 @@
     .mascotas {
         grid-template-columns: repeat(2,minmax(6.5rem,1fr));
     }
+
+    .contenedor-seccion {
+        padding: 0.5rem;
+    }
 }
 
