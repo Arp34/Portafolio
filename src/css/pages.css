@@ -1,10 +1,4 @@
-/* Sección Habilidades */
-.habilidades {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-}
+/* Sección Habilidades */ 
 
 .habilidades {
     display: flex;
@@ -17,15 +11,20 @@
 .habilidad {
     width: 12rem;
     overflow: hidden;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .habilidad img {
-    height: auto    ; 
+    height: auto; 
+    width: 7.3rem;
     max-width: 100%;
     object-fit: contain;
 }
 
-.habilidad img:hover {
+.habilidad:hover {
     transform: scale(1.1);
 }
 
@@ -76,7 +75,10 @@
     .proyectos {
         grid-template-columns: repeat(2, minmax(19.75rem, 1fr));
     }
-    
+    .habilidad{
+        width: 9rem;
+        
+    }
 }
 
 @media (max-width: 425px) {
