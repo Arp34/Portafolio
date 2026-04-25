@@ -2,11 +2,15 @@
 
 Página web personal que presenta el perfil profesional, habilidades técnicas y proyectos de Axel Ruiz Polo.
 
-## 📋 Descripción
+## Enlace al sitio
+
+[**Visitar portafolio**](https://arp34.github.io/)
+
+## Descripción
 
 Este es un portafolio web desarrollado con **HTML5**, **CSS3** y **JavaScript**. El sitio incluye una sección de perfil, habilidades técnicas, proyectos realizados y una galería de mascotas como sección adicional.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Tecnología |                            Uso                             |
 |------------|------------------------------------------------------------|
@@ -41,7 +45,7 @@ Arp/
 │       └── mascotas.html   # Página de galería de mascotas
 ```
 
-## ✨ Características
+## Características
 
 - **Diseño responsivo**: Se adapta a diferentes tamaños de pantalla (mobile, tablet, desktop)
 - **Navegación sticky**: El header permanece fijo al hacer scroll
